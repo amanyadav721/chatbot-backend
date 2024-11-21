@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello, Render!"}
+    return {"message": "Hello, Aman!"}
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))  # Use PORT from the environment, default to 8000
