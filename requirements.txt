@@ -1,2 +1,10 @@
-fastapi
-uvicorn
+# fastapi
+# uvicorn
+logging
+requests
+PyPDF2
+langchain
+langchain_google_genai
+langchain_groq
+python-dotenv
+faiss-cpu
