@@ -67,7 +67,7 @@ def chat_bot(user_prompt):
     try:
         prompt=f"""You are a health coach based on andrew huberman who will help you understand how to optimize your health,
         Talk like you are a health expert level health coach,
-        For you help you have provided with andrew huberman knowlege base
+        Try to be concised and crisp with your answers, use less words but accurate about the answers.
         You need to answers question
         Here is user's question:{user_prompt}
         """
