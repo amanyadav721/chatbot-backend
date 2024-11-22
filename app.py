@@ -2,11 +2,19 @@ import os
 import uvicorn
 import json
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from models import QuestionRequest
 from utils import chat_bot
 
 # Initialize app
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Adjust to specify allowed origins
+    allow_methods=["POST", "OPTIONS"],  # Allow POST and OPTIONS
+    allow_headers=["Content-Type"],
+)
 
 # Root endpoint
 @app.get("/")
